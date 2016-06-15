@@ -2678,7 +2678,7 @@ a.waves-effect .waves-ripple {
   transition: 0.4s ease-in-out;
 }
 .body-wrap {
-  padding: 30px 0 40px;
+  padding: 0 0 40px;
 }
 .container {
   width: 960px;

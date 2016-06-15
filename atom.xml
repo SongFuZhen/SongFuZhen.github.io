@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://SongFuZhen.github.io/"/>
-  <updated>2016-06-12T06:47:30.486Z</updated>
+  <updated>2016-06-15T09:57:55.356Z</updated>
   <id>http://SongFuZhen.github.io/</id>
   
   <author>
@@ -16,18 +16,99 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello Hexo</title>
-    <link href="http://SongFuZhen.github.io/2016/06/12/Hello-Hexo/"/>
-    <id>http://SongFuZhen.github.io/2016/06/12/Hello-Hexo/</id>
-    <published>2016-06-12T04:35:02.000Z</published>
-    <updated>2016-06-12T06:47:30.486Z</updated>
+    <title>使用Hexo管理Github个人博客</title>
+    <link href="http://SongFuZhen.github.io/2016/06/15/%E4%BD%BF%E7%94%A8Hexo%E7%AE%A1%E7%90%86Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://SongFuZhen.github.io/2016/06/15/使用Hexo管理Github个人博客/</id>
+    <published>2016-06-15T04:00:22.000Z</published>
+    <updated>2016-06-15T09:57:55.356Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;教程软件列表&quot;&gt;&lt;a href=&quot;#教程软件列表&quot; class=&quot;headerlink&quot; title=&quot; 教程软件列表&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-cloud-download&quot;&gt;&lt;/i&gt; 教程软件列表&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h5 id=&quot;【Tips】-GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot;&gt;&lt;a href=&quot;#【Tips】-GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot; class=&quot;headerlink&quot; title=&quot;【Tips】  GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot;&gt;&lt;/a&gt;【Tips】  GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&lt;/h5&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Node.js ：Hexo必备。 用来运行Hexo环境以及使用npm安装必备软件&lt;h4 id=&quot;Node-js-官网下载&quot;&gt;&lt;a href=&quot;#Node-js-官网下载&quot; class=&quot;headerlink&quot; title=&quot;Node.js 官网下载&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://nodejs.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js 官网下载&lt;/a&gt;&lt;/h4&gt;&lt;/li&gt;
+&lt;li&gt;Git Bash ：敲命令用。充分享受程序员级别黑窗口的待遇吧&lt;h4 id=&quot;Git-Bash-网盘下载&quot;&gt;&lt;a href=&quot;#Git-Bash-网盘下载&quot; class=&quot;headerlink&quot; title=&quot;Git Bash 网盘下载&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://pan.baidu.com/s/1jIbGLNK&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Bash 网盘下载&lt;/a&gt;&lt;/h4&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;创建Github账号&quot;&gt;&lt;a href=&quot;#创建Github账号&quot; class=&quot;headerlink&quot; title=&quot; 创建Github账号&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt; 创建Github账号&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;Tips&quot;&gt;&lt;a href=&quot;#Tips&quot; class=&quot;headerlink&quot; title=&quot;Tips&quot;&gt;&lt;/a&gt;Tips&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Github是非常好的团队合作平台，尤其是代码的存放。&lt;/li&gt;
+&lt;li&gt;你也可以使用Github存放一些对自己很有用的文档。&lt;/li&gt;
+&lt;li&gt;由于Github 免费版是公开的，你的所有Public仓库都能被别人看到或者搜索到。一些重要的信息不要放置在上面，比如 密码账号等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1、-注册Github账号-（有Github账号的可以直接跳转到第二步，创建个人博客）&quot;&gt;&lt;a href=&quot;#1、-注册Github账号-（有Github账号的可以直接跳转到第二步，创建个人博客）&quot; class=&quot;headerlink&quot; title=&quot;1、 注册Github账号 （有Github账号的可以直接跳转到第二步，创建个人博客） &quot;&gt;&lt;/a&gt;1、 注册Github账号 （有Github账号的可以直接跳转到第二步，创建个人博客） &lt;br&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击访问Github官网Github&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-1.jpg&quot; alt=&quot;图1-1 Github官网&quot; title=&quot;图1-1 Github官网&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt; 点击&lt;em&gt;Sign in&lt;/em&gt;进行注册 &lt;/em&gt;&lt;/strong&gt;&lt;blockquote&gt;
+&lt;h5 id=&quot;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot;&gt;&lt;a href=&quot;#注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot; class=&quot;headerlink&quot; title=&quot;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot;&gt;&lt;/a&gt;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&lt;/h5&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;2、-创建个人博客&quot;&gt;&lt;a href=&quot;#2、-创建个人博客&quot; class=&quot;headerlink&quot; title=&quot;2、 创建个人博客&quot;&gt;&lt;/a&gt;2、 创建个人博客&lt;br&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点击 &lt;code&gt;+&lt;/code&gt; 选择 &lt;code&gt;New repository&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-2.jpg&quot; alt=&quot;图1-2 New repository&quot; title=&quot;图1-2 New repository&quot;&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;填写信息&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;Warning&quot;&gt;&lt;a href=&quot;#Warning&quot; class=&quot;headerlink&quot; title=&quot;Warning&quot;&gt;&lt;/a&gt;Warning&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;仓库名称是 &lt;strong&gt;固定的&lt;/strong&gt; ： &lt;strong&gt; 名称+github.io &lt;/strong&gt; 。 我的就是 &lt;code&gt;SongFuZhen.github.io&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;如果名称写错，将创建正常的仓库，而不是个人博客。之后将无法继续&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;如果想创建&lt;code&gt;Private&lt;/code&gt;， 需要购买Github服务，所以一般都是选择&lt;code&gt;Public&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-3.jpg&quot; alt=&quot;图1-3 New repository&quot; title=&quot;图1-3 New repository&quot;&gt;
+&lt;h3 id=&quot;3、-测试使用&quot;&gt;&lt;a href=&quot;#3、-测试使用&quot; class=&quot;headerlink&quot; title=&quot;3、 测试使用&quot;&gt;&lt;/a&gt;3、 测试使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;看到如下界面就说明已经创建成功。 &lt;code&gt;Congratulations!!!&lt;/code&gt; 请继续阅览&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-4.jpg&quot; alt=&quot;图1-4 New repository&quot; title=&quot;图1-4 New repository&quot;&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;安装Hexo&quot;&gt;&lt;a href=&quot;#安装Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt;安装Hexo&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果你还没有安装&lt;code&gt;Node.js&lt;/code&gt;和 &lt;code&gt;Git Bash&lt;/code&gt;,那么请你先安装好再继续。如果安装了，可以使用下面方法测试&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1、参照Hexo官方文档安装-Git-Bash-和-Node-js&quot;&gt;&lt;a href=&quot;#1、参照Hexo官方文档安装-Git-Bash-和-Node-js&quot; class=&quot;headerlink&quot; title=&quot;1、参照Hexo官方文档安装 Git Bash 和 Node.js&quot;&gt;&lt;/a&gt;1、参照Hexo官方文档安装 &lt;code&gt;Git Bash&lt;/code&gt; 和 &lt;code&gt;Node.js&lt;/code&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;点击此处查看 &lt;a href=&quot;https://hexo.io/zh-cn/docs/#安装&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何安装Hexo环境&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2、测试&quot;&gt;&lt;a href=&quot;#2、测试&quot; class=&quot;headerlink&quot; title=&quot;2、测试&quot;&gt;&lt;/a&gt;2、测试&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;鼠标右击任意桌面，选择 &lt;code&gt;Git Bash Here&lt;/code&gt; ， 打开如下图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-5.jpg&quot; alt=&quot;图1-5 Git Bash 窗口&quot; title=&quot;图1-5 Git Bash 窗口&quot;&gt;&lt;/li&gt;
+&lt;li&gt;测试 &lt;code&gt;Node.js&lt;/code&gt; 是否成功， 在Bash里面输入 &lt;code&gt;node&lt;/code&gt;之后 回车, 如下图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-6.jpg&quot; alt=&quot;图1-6 Node&quot; title=&quot;图1-6 Node&quot;&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;3、安装Hexo环境&quot;&gt;&lt;a href=&quot;#3、安装Hexo环境&quot; class=&quot;headerlink&quot; title=&quot;3、安装Hexo环境&quot;&gt;&lt;/a&gt;3、安装Hexo环境&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;如果全部安装成功，那么就可以安装Hexo环境了。&lt;br&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在Git Bash中输入一行命令 &lt;code&gt;npm install -g hexo-cli&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;等待下载Hexo必备信息，时间视网速环境而定。可能时间稍微长点。出现下面信息表示安装成功&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-7.jpg&quot; alt=&quot;图1-7 安装hexo&quot; title=&quot;图1-7 安装hexo&quot;&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;Git Bash&lt;/code&gt;中输入 &lt;code&gt;hexo -v&lt;/code&gt;， 出现下面信息表示安装成功&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-8.jpg&quot; alt=&quot;图1-8 hexo-v&quot; title=&quot;图1-8 hexo-v&quot;&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4、创建Hexo目录&quot;&gt;&lt;a href=&quot;#4、创建Hexo目录&quot; class=&quot;headerlink&quot; title=&quot;4、创建Hexo目录&quot;&gt;&lt;/a&gt;4、创建Hexo目录&lt;/h4&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;Tips-1&quot;&gt;&lt;a href=&quot;#Tips-1&quot; class=&quot;headerlink&quot; title=&quot;Tips&quot;&gt;&lt;/a&gt;Tips&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;可以参照Hexo官网的建站, 点击&lt;a href=&quot;https://hexo.io/zh-cn/docs/setup.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;查看如何使用Hexo建站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;strong&gt;你要存放博客&lt;/strong&gt;的文件夹中 右击， 打开 &lt;code&gt;Git Bash&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;在命令行中输入 &lt;code&gt;hexo init TestBlog&lt;/code&gt;。 意思就是初始化一个名为Blog文件夹。当然，名字你可以随便起&lt;/li&gt;
+&lt;li&gt;等待，可能需要一会时间。 创建成功， 如下图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-9.jpg&quot; alt=&quot;图1-9 hexo init TestBlog&quot; title=&quot;图1-9 hexo init TestBlog&quot;&gt;&lt;/li&gt;
+&lt;li&gt;进入新建目录， 输入命令行： &lt;code&gt;cd TestBlog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行 &lt;code&gt;npm install&lt;/code&gt; 命令， 输入命令行： &lt;code&gt;npm install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行启动服务命令， 输入命令行： &lt;code&gt;hexo s&lt;/code&gt;, 出现下面信息表示运行成功&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-10.jpg&quot; alt=&quot;图1-10 hexo s&quot; title=&quot;图1-10 hexo s&quot;&gt;&lt;/li&gt;
+&lt;li&gt;打开浏览器，输入url：  &lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;localhost:4000&lt;/a&gt;&lt;h3 id=&quot;If-it-show-Congratulations-Man-Just-Enjoy-Hexo。OOO&quot;&gt;&lt;a href=&quot;#If-it-show-Congratulations-Man-Just-Enjoy-Hexo。OOO&quot; class=&quot;headerlink&quot; title=&quot;If it show , Congratulations, Man! Just Enjoy Hexo。OOO&quot;&gt;&lt;/a&gt;If it show , Congratulations, Man! Just Enjoy Hexo。OOO&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;部署到Github&quot;&gt;&lt;a href=&quot;#部署到Github&quot; class=&quot;headerlink&quot; title=&quot;部署到Github&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt;部署到Github&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;Tips-2&quot;&gt;&lt;a href=&quot;#Tips-2&quot; class=&quot;headerlink&quot; title=&quot;Tips&quot;&gt;&lt;/a&gt;Tips&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;安装Hexo主题&quot;&gt;&lt;a href=&quot;#安装Hexo主题&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo主题&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt;安装Hexo主题&lt;/h2&gt;</content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;教程软件列表&quot;&gt;&lt;a href=&quot;#教程软件列表&quot; class=&quot;headerlink&quot; title=&quot; 教程软件列表&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-cloud-download&quot;&gt;&lt;/i&gt; 教程软件列表&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h
+    
     </summary>
     
+    
+      <category term="Github" scheme="http://SongFuZhen.github.io/tags/Github/"/>
+    
+      <category term="Hexo" scheme="http://SongFuZhen.github.io/tags/Hexo/"/>
+    
+      <category term="个人博客" scheme="http://SongFuZhen.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
