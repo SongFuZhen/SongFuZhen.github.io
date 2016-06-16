@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://SongFuZhen.github.io/"/>
-  <updated>2016-06-15T09:57:55.356Z</updated>
+  <updated>2016-06-16T03:38:57.282Z</updated>
   <id>http://SongFuZhen.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://SongFuZhen.github.io/2016/06/15/%E4%BD%BF%E7%94%A8Hexo%E7%AE%A1%E7%90%86Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://SongFuZhen.github.io/2016/06/15/使用Hexo管理Github个人博客/</id>
     <published>2016-06-15T04:00:22.000Z</published>
-    <updated>2016-06-15T09:57:55.356Z</updated>
+    <updated>2016-06-16T03:38:57.282Z</updated>
     
     <content type="html">&lt;h2 id=&quot;教程软件列表&quot;&gt;&lt;a href=&quot;#教程软件列表&quot; class=&quot;headerlink&quot; title=&quot; 教程软件列表&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-cloud-download&quot;&gt;&lt;/i&gt; 教程软件列表&lt;/h2&gt;&lt;blockquote&gt;
 &lt;h5 id=&quot;【Tips】-GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot;&gt;&lt;a href=&quot;#【Tips】-GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot; class=&quot;headerlink&quot; title=&quot;【Tips】  GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&quot;&gt;&lt;/a&gt;【Tips】  GitBash只适用于Windows用户，如果是Ubuntu或者Mac用户，可以使用自带终端。&lt;/h5&gt;&lt;/blockquote&gt;
@@ -41,7 +41,48 @@
 &lt;h5 id=&quot;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot;&gt;&lt;a href=&quot;#注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot; class=&quot;headerlink&quot; title=&quot;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&quot;&gt;&lt;/a&gt;注册过程比较简单，此处不再赘述，如果不会注册，建议你放弃接下来的教程，安安静静的享受人生。&lt;/h5&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;2、-创建个人博客&quot;&gt;&lt;a href=&quot;#2、-创建个人博客&quot; class=&quot;headerlink&quot; title=&quot;2、 创建个人博客&quot;&gt;&lt;/a&gt;2、 创建个人博客&lt;br&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;h3 id=&quot;2、-配置SSH-Keys&quot;&gt;&lt;a href=&quot;#2、-配置SSH-Keys&quot; class=&quot;headerlink&quot; title=&quot;2、 配置SSH Keys&quot;&gt;&lt;/a&gt;2、 配置SSH Keys&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;为什么要配置SSH-Keys&quot;&gt;&lt;a href=&quot;#为什么要配置SSH-Keys&quot; class=&quot;headerlink&quot; title=&quot;为什么要配置SSH Keys?&quot;&gt;&lt;/a&gt;为什么要配置SSH Keys?&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;如果选择不配置， 也是可以的。只是每次向&lt;code&gt;Github&lt;/code&gt; 提交的时候都要输入用户名和密码。Of Course， Safe More.&lt;/li&gt;
+&lt;li&gt;配置之后， 以后所有的Github提交都可以不用输入用户名密码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;Git Bash&lt;/code&gt;。&lt;ul&gt;
+&lt;li&gt;如果没有安装，请看开头， 下载软件并安装&lt;/li&gt;
+&lt;li&gt;安装之后， 桌面右击选择&lt;code&gt;Git Bash Here&lt;/code&gt;打开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;输入命令 &lt;code&gt;cd ~/. ssh&lt;/code&gt; 来检查本机的ssh密钥&lt;ul&gt;
+&lt;li&gt;如果提示：&lt;code&gt;No such file or directory&lt;/code&gt; 说明你是第一次使用&lt;code&gt;git&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;如果能够进入，说明你已经配置过了。至于是不是你的，只有你自己知道了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;输入命令 &lt;code&gt;ssh-keygen -t rsa -C &amp;quot;邮件地址@youremail.com&amp;quot;&lt;/code&gt;&lt;br&gt;之后一路回车就行了。直到出现下图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-12.png&quot; alt=&quot;图1-12 SSH Key&quot; title=&quot;图1-12 SSH Key&quot;&gt;&lt;/li&gt;
+&lt;li&gt;然后输入命令行 &lt;code&gt;vim ~/.ssh/id_rsa.pub&lt;/code&gt;，打开如图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-13.jpg&quot; alt=&quot;图1-13 SSH Key&quot; title=&quot;图1-13 SSH Key&quot;&gt;&lt;/li&gt;
+&lt;li&gt;复制里面的内容。使用右键复制&lt;/li&gt;
+&lt;li&gt;登录 &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;, 点击头像 &lt;code&gt;Settings&lt;/code&gt;， 选中&lt;code&gt;SSH and GPG keys&lt;/code&gt;，如下图&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-14.jpg&quot; alt=&quot;图1-14 SSH and GPG Keys&quot; title=&quot;图1-14 SSH and GPG Keys&quot;&gt;&lt;/li&gt;
+&lt;li&gt;选择 &lt;code&gt;New SSH Key&lt;/code&gt;， 进行添加。&lt;ul&gt;
+&lt;li&gt;title 随便写&lt;/li&gt;
+&lt;li&gt;内容填写复制的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;测试&lt;ul&gt;
+&lt;li&gt;输入命令行 &lt;code&gt;ssh -T git@github.com&lt;/code&gt;,出现如下信息&lt;pre&gt;&lt;code&gt;... Are you sure you want to continue connecting (yes/no)?
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;输入 &lt;code&gt;yes&lt;/code&gt;，出现如下信息，表示成功&lt;pre&gt;&lt;code&gt;Hi SongFuZhen! You&amp;apos;ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;配置自己的用户名和密码&lt;ul&gt;
+&lt;li&gt;输入命令行，配置用户名&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;SongFuZhen&amp;quot;  // Github 的用户名
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;输入命令行， 配置邮箱&lt;pre&gt;&lt;code&gt;git config --global user.email  &amp;quot;你自己的邮箱.com&amp;quot;//自己注册 Github 的邮箱
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;3、-创建个人博客&quot;&gt;&lt;a href=&quot;#3、-创建个人博客&quot; class=&quot;headerlink&quot; title=&quot;3、 创建个人博客&quot;&gt;&lt;/a&gt;3、 创建个人博客&lt;br&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;点击 &lt;code&gt;+&lt;/code&gt; 选择 &lt;code&gt;New repository&lt;/code&gt;&lt;/p&gt;
 &lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-2.jpg&quot; alt=&quot;图1-2 New repository&quot; title=&quot;图1-2 New repository&quot;&gt;
 &lt;/li&gt;
@@ -54,7 +95,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-3.jpg&quot; alt=&quot;图1-3 New repository&quot; title=&quot;图1-3 New repository&quot;&gt;
-&lt;h3 id=&quot;3、-测试使用&quot;&gt;&lt;a href=&quot;#3、-测试使用&quot; class=&quot;headerlink&quot; title=&quot;3、 测试使用&quot;&gt;&lt;/a&gt;3、 测试使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;4、-测试使用&quot;&gt;&lt;a href=&quot;#4、-测试使用&quot; class=&quot;headerlink&quot; title=&quot;4、 测试使用&quot;&gt;&lt;/a&gt;4、 测试使用&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;看到如下界面就说明已经创建成功。 &lt;code&gt;Congratulations!!!&lt;/code&gt; 请继续阅览&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-4.jpg&quot; alt=&quot;图1-4 New repository&quot; title=&quot;图1-4 New repository&quot;&gt;
@@ -93,7 +134,49 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;部署到Github&quot;&gt;&lt;a href=&quot;#部署到Github&quot; class=&quot;headerlink&quot; title=&quot;部署到Github&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt;部署到Github&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h4 id=&quot;Tips-2&quot;&gt;&lt;a href=&quot;#Tips-2&quot; class=&quot;headerlink&quot; title=&quot;Tips&quot;&gt;&lt;/a&gt;Tips&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;配置Github&lt;/li&gt;
+&lt;li&gt;输入命令行&lt;/li&gt;
+&lt;li&gt;成功，打开Github网址进行访问， 如  &lt;a href=&quot;http://songfuzhen.github.io&quot;&gt;http://songfuzhen.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1、配置Github&quot;&gt;&lt;a href=&quot;#1、配置Github&quot; class=&quot;headerlink&quot; title=&quot;1、配置Github&quot;&gt;&lt;/a&gt;1、配置Github&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在文件夹目录中打开&lt;code&gt;Git Bash&lt;/code&gt;&lt;br&gt;在文件夹中右击选择 &lt;code&gt;Git Bash Here&lt;/code&gt; 打开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为Hexo项目安装Git插件&lt;br&gt;执行命令行 &lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;， 安装Git插件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置项目目录下 &lt;code&gt;_config.yml&lt;/code&gt; 文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;Warning-1&quot;&gt;&lt;a href=&quot;#Warning-1&quot; class=&quot;headerlink&quot; title=&quot;Warning&quot;&gt;&lt;/a&gt;Warning&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;冒号后面使用半角符号空一格&lt;ul&gt;
+&lt;li&gt;type: git  #(固定)&lt;/li&gt;
+&lt;li&gt;repository: git@github.com:SongFuZhen/SongFuZhen.github.io.git&lt;/li&gt;
+&lt;li&gt;branch: master #(固定)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;repository&lt;/code&gt; 必须复制 &lt;code&gt;git@github.com&lt;/code&gt; 开头的，不要复制 &lt;code&gt;https://&lt;/code&gt; 开头的，具体原因嘛…知者自知，不知者照着做就可以。&lt;/li&gt;
+&lt;li&gt;如果&lt;code&gt;repository&lt;/code&gt;没有&lt;code&gt;git@github.com&lt;/code&gt;开头， 那么请&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击此处&lt;/a&gt;先登录你的&lt;code&gt;github&lt;/code&gt;账号，然后再复制地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;具体操作如下&quot;&gt;&lt;a href=&quot;#具体操作如下&quot; class=&quot;headerlink&quot; title=&quot;具体操作如下&quot;&gt;&lt;/a&gt;具体操作如下&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;打开你的Github仓库 &lt;code&gt;(SongFuZhen.github.io)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如图 1-4 打开图上所标示的 &lt;code&gt;克隆地址处&lt;/code&gt; 进行复制&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-4.jpg&quot; alt=&quot;图1-4 克隆地址&quot; title=&quot;图1-4 克隆地址&quot;&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定位到 &lt;code&gt;deploy:&lt;/code&gt;目录下， 填写信息如下图&lt;/p&gt;
+&lt;img src=&quot;/2016/06/15/使用Hexo管理Github个人博客/1-11.jpg&quot; alt=&quot;图1-11 配置Git&quot; title=&quot;图1-11 配置Git&quot;&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;执行命令&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;部署命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h5&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&quot;安装Hexo主题&quot;&gt;&lt;a href=&quot;#安装Hexo主题&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo主题&quot;&gt;&lt;/a&gt;&lt;i class=&quot;icon icon-chain&quot;&gt;&lt;/i&gt;安装Hexo主题&lt;/h2&gt;</content>
     
     <summary type="html">
